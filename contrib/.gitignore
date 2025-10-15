@@ -1,0 +1,26 @@
+# Ignore everything by default, contrib sources are coming from other places
+*
+
+# Keep our modified 5G-LENA contrib tree
+!nr/
+!nr/**
+
+# Keep this file
+!.gitignore
+
+# Still ignore typical build outputs under contrib
+**/build/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/*.o
+**/*.so
+**/*.dylib
+**/*.a
+**/*.lo
+**/*.la
+**/*.obj
+**/*.gcno
+**/*.gcda
+**/*.gcov
+**/Testing/
+**/CTestTestfile.cmake

@@ -1,0 +1,53 @@
+namespace SivertAPI.PosUpd;
+
+struct Vec3API {
+  x: float;
+  y: float;
+  z: float;
+  id: int;
+}
+
+struct EEBL {
+  triggered: bool = false;
+  VehID: int;
+}
+
+table GSCMstruct {
+  UseGSCM: bool = false;
+  RSS: double;
+}
+
+struct VehInfo {
+  id: int;
+  timeStamp: float;
+}
+
+struct GscmInfo {
+  Tx: int;
+  Rx: int;
+  rss: double;
+}
+
+
+table SpectrumValue {
+  ChannelID: int;
+  TxID: int;
+  RxID: int;
+  IsEMIChannel: bool = false;
+  PSDGainCoefficient: [double];  // Vector of PSD Gain Coefficients
+  CoefInd: int;
+}
+
+table PosAPI {
+  GSCM: GSCMstruct;
+  GSCMvector: [GscmInfo];
+  CITS: [EEBL];
+  pos: [Vec3API];
+  Suppl: [VehInfo];
+  terminateNS3: bool = false;
+  GSCMSpectruChannels: [SpectrumValue];
+  NumberOfFrequnciesPerChannel: int;
+  V2Xstack: string;
+}
+
+root_type PosAPI;

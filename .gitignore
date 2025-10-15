@@ -1,0 +1,94 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Compiled sources / libs / binaries
+*.o
+*.lo
+*.la
+*.obj
+*.gch
+*.pch
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.out
+*.app
+
+# CMake / build outputs
+/build/
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+Testing/
+CTestTestfile.cmake
+
+# ns-3 wrapper and temp artifacts
+.lock-ns3_*_build
+/default/
+/testpy-output/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Coverage / reports
+coverage/
+.coverage*
+*.gcno
+*.gcda
+*.gcov
+lcov.info
+doc/**/build/
+/doc/build/
+
+# Logs
+*.log
+*.log.*
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.kate-swp
+.project
+.settings/
+.cproject
+
+# Packaging / wheels
+dist/
+*.egg-info/
+build-support/pip-wheel/
+
+# Doxygen / generated docs
+doc/html/
+doc/html-warn/
+doc/latex/
+doxygen.log
+doxygen.warnings*
+
+# Traces / outputs
+*.pcap
+*.pcapng
+*.tr
+
+# Caches
+.cache/
+.ccache/

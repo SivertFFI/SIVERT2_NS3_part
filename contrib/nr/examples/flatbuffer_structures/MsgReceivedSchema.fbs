@@ -1,0 +1,24 @@
+namespace SivertAPI.MsgReceived;
+
+struct Vec3Rx{
+  x:double;
+  y:double;
+  z:double;
+}
+
+struct PacketInfo {
+
+  senderID:uint;
+  receiverID:uint;
+  timeReceived:long;
+  sent:bool=false;
+
+}
+
+table MsgRecAPI {
+  pos:Vec3Rx;        // Vector of structs.
+  PackContent:PacketInfo;   // Info about transmitting node.
+  MsgContent:string; // Content of the received message.
+}
+
+root_type MsgRecAPI;
